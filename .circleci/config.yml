@@ -1,0 +1,10 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+    working_directory: /go/src/github.com/dselans/rlock
+    steps:
+      - checkout
+      - run: go get -t -v ./...
+      - run: go test ./...
