@@ -1,5 +1,4 @@
 [![CircleCI](https://circleci.com/gh/dselans/rlock.svg?style=svg)](https://circleci.com/gh/dselans/rlock)
-[![codecov](https://codecov.io/gh/dselans/rlock/branch/master/graph/badge.svg?token=eWHfq11AM9)](https://codecov.io/gh/dselans/rlock)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dselans/rlock)](https://goreportcard.com/report/github.com/dselans/rlock)
 [![Godocs](https://img.shields.io/badge/golang-documentation-blue.svg)](https://godoc.org/github.com/dselans/rlock)
 
