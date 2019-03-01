@@ -33,7 +33,7 @@ var _ = Describe("RLock", func() {
 
 	Describe("New", func() {
 		var (
-			db   *sqlx.DB
+			db *sqlx.DB
 		)
 
 		BeforeEach(func() {

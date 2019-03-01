@@ -1,10 +1,10 @@
 package rlock
 
 import (
+	"database/sql"
 	"errors"
 	"fmt"
 	"time"
-	"database/sql"
 
 	golog "github.com/InVisionApp/go-logger"
 	gologShim "github.com/InVisionApp/go-logger/shims/logrus"
@@ -12,12 +12,11 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/jmoiron/sqlx/types"
 	"github.com/satori/go.uuid"
-
 )
 
 var (
 	AcquireTimeoutErr = errors.New("reached timeout while waiting on lock")
-	KeyNotFoundErr = errors.New("no such lock")
+	KeyNotFoundErr    = errors.New("no such lock")
 
 	log golog.Logger
 )
